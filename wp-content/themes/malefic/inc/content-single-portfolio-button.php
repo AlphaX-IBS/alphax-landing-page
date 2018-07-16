@@ -1,0 +1,1 @@
+<div class="post-meta-button"><?php echo ebor_get_wysiwyg_output( '_ebor_meta_wysiwyg', get_the_ID() ); ?></div>
