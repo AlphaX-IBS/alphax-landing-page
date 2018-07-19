@@ -47,3 +47,18 @@ if( is_admin() ){
 if( function_exists('vc_set_as_theme') ){
 	require_once( EBOR_REQUIRE_DIRECTORY . "vc_init.php" );
 }
+
+/* Remove PrettyPhoto */
+function remove_prettyphoto() {
+
+        // Styles
+        wp_dequeue_style( 'prettyPhoto_css' );
+
+        // Scripts
+        wp_dequeue_script( 'prettyPhoto' );
+        wp_dequeue_script( 'prettyPhoto-init' );
+        wp_dequeue_script( 'fancybox' );
+        wp_dequeue_script( 'enable-lightbox' );
+}
+
+add_action( 'wp_enqueue_scripts', 'remove_prettyphoto', 99 );
