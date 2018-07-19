@@ -1,0 +1,2 @@
+#large-header {	position: fixed; width: 100%; top:0px; left:0px; overflow: hidden; background-size: cover; background-position: center center; z-index: 9999999; background: #121212;}
+.main-title-plexus {position:absolute; left:0; right:0; margin-left:auto; margin-right:auto; padding: 0; text-align: center; top: 50%;-webkit-transform: translate3d(-50%,-50%,0);transform: translate3d(-50%,-50%,0);}.main-title-plexus {text-align: center; font-size: 3em; color: #fff; font-family: sans-serif;}
