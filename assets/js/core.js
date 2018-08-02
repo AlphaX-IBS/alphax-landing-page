@@ -705,12 +705,12 @@ var Okno = {
                             data: $form.serialize(),
                             error       : function(err) { setTimeout(function(){ $btn.addClass('error'); }, 1200); },
                             success     : function(data) {
-                                if (data != "success") {
+                                if (data == "failed") {
                                     response = 'error';
-                                    showNotification('error',msgError);
+                                    showNotification('error','Error in the Mailer');
                                 } else {
                                     response = 'success';
-                                    showNotification('success',msgSuccess);
+                                    showNotification('success','Thank you! Your message has been sent to our team.');
                                 }
                                 setTimeout(function(){
                                     $btn.addClass(response);
