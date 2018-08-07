@@ -3067,6 +3067,9 @@ body.mobile-nav-open .menu-toggle .mobile-trigger span>span:after {
 }
 
 @media only screen and (max-width: 991px) {
+  #header:not(.out).transparent {
+    color: #1f1f1f;
+  }
   .nav-primary {
     position: absolute;
     top: 68px;
